@@ -33,16 +33,20 @@
     <p>&copy; 2025 Coffee Haven. All rights reserved. GROUP 27</p>
   </footer>
   <script>
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-        e.preventDefault();
-        alert("Thank you for contacting Coffee Haven! We'll get back to you soon.");
-        this.reset();
-    });
-});
+      document.addEventListener("DOMContentLoaded", function() {
+          const form = document.getElementById("contactForm");
+          if (form) {
+              form.addEventListener("submit", function(e) {
+                  e.preventDefault();
+                  alert("Thank you for contacting Coffee Haven! We'll get back to you soon.");
+                  this.reset();
+              });
+          }
+      });
 </script>
 </body>
 </html>
+
 
 
 
